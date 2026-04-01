@@ -5,10 +5,9 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/Haridharani-SP/sonarqube-demo.git'
+                checkout scm
             }
         }
-
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv('My Sonar Server') {
