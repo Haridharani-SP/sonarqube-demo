@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 def insecure():
     password = "12345"  # vulnerability
-    return password
+    return password1
 # Page config
 st.set_page_config(page_title="Basic Dashboard", layout="wide")
 
