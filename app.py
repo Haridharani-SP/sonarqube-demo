@@ -1,7 +1,9 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-
+def insecure():
+    password = "12345"  # vulnerability
+    return password
 # Page config
 st.set_page_config(page_title="Basic Dashboard", layout="wide")
 
@@ -42,3 +44,4 @@ col5.metric("Max Value", round(data["Values"].max(), 2))
 # Footer
 st.markdown("---")
 st.write("Made with ❤️ using Streamlit")
+insecure()
