@@ -17,7 +17,7 @@ pipeline {
                     -Dsonar.projectKey=sonar-demo \
                     -Dsonar.sources=. \
                     -Dsonar.host.url=http://localhost:9000 \
-                    -Dsonar.login=${SONAR_AUTH_TOKEN}
+                    -Dsonar.login=squ_c4f3e6b02b895b3e0e62d6c354879192fe63c977
                     '''
                 }
             }
